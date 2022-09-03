@@ -110,12 +110,19 @@
    .page4 .page4_img img {
       width: 550px;
    }
+   .page5_body {
+      display: flex;
+      justify-content: center;
+   }
    .page5 .page5_content {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 100px;
       grid-row-gap: 50px;
+   }
+   .page5_content>*:not(:last-child) {
+      margin-right: 0px;
    }
    .img6 {
       width: 35px;
@@ -218,13 +225,6 @@
    .page3 .page3_content .block1 {
       max-width: 350px;
    }
-   .page5 .page5_content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
-   }
 }
 @media(max-width: 850px) {
    .container {
@@ -255,6 +255,9 @@
    .footer .footer_soces {
       margin: 60px 0 0 0;
    }
+   .page4 .page4_text {
+      padding: 10px;
+   }
 }
 
 @media(max-width: 650px) {
@@ -267,13 +270,100 @@
    }
 }
 
-@media(max-width: 600px) {
-   .container {
-      padding: 0 10px;
+@media(max-width: 650px) {
+   body.lock {
+      overflow: hidden;
+   }
+   .header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 50;
+         width: 100%;
+   }
+   .header_rows {
+      padding: 10px 0;
+   }
+   .nav {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(57, 46, 46);
+      padding: 120px 0 0 0;
+      transition: all .3s ease 0s;
+      overflow: auto;
+   }
+   .menu_burger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+   }
+   .menu_burger span {
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all .3s ease 0s;
    }
    .head_link {
-      font-size: 17px;
-      line-height: 20px;
+      font-size: 23px;
+      line-height: 29px;
+   }
+   .menu_burger:before,
+   .menu_burger:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+   }
+   .menu_burger:before{
+      top: 0;
+      transition: all .3s ease 0s;
+   }
+   .menu_burger:after{
+      bottom: 0;
+      transition: all .3s ease 0s;
+   }
+   .head_list {
+      flex-direction: column;
+      padding: 0 20px;
+   }
+   .head_list > *:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 15px;
+   }
+   .page1 {
+      padding: 250px 0 0 0;
+   }
+}
+
+@media(max-width: 600px) {
+   .nav {
+      padding: 100px 0 0 0;
+   }
+   .head_link {
+      font-size: 20px;
+      line-height: 25px;
+   }
+   .header_rows {
+      padding: 10px 0;
+      height: 80px;
+   }
+   .header_content:before {
+      height: 80px;
+   }
+   .container {
+      padding: 0 10px;
    }
    .logo img {
       width: 60px;
@@ -281,12 +371,16 @@
    .head_list>*:not(:last-child) {
       margin-right: 15px;
    }
+   .page1 {
+      padding: 180px 0 0 0;
+   }
    .page1 .page1_columns>*:not(:last-child) {
       margin: 0 0 80px 0;
    }
    .page1 .page1_columns .page1_text1,
    .page1 .page1_columns .page1_text2 {
       width: 100%;
+      padding: 5px;
    }
    .text1 {
       font-size: 18px;
@@ -338,9 +432,15 @@
 }
 
 @media(max-width: 450px) {
-   .head_link {
-      font-size: 14px;
-      line-height: 17px;
+   .nav {
+      padding: 80px 0 0 0;
+   }
+   .header_rows {
+      padding: 10px 0;
+      height: 60px;
+   }
+   .header_content:before {
+      height: 60px;
    }
    .logo img {
       width: 50px;
@@ -351,8 +451,15 @@
    .page0 {
       padding: 60px 0 50px 0;
    }
+   .page1 {
+      padding: 100px 0 0 0;
+   }
    .page1 .page1_columns>*:not(:last-child) {
       margin: 0 0 80px 0;
+   }
+   .page1 .page1_columns .page1_text1,
+   .page1 .page1_columns .page1_text2 {
+      padding: 2px;
    }
    .text1 {
       font-size: 16px;
@@ -380,8 +487,11 @@
    }
    .page2 .page2_content_text .page2_title {
       font-size: 42px;
-      line-height: 20px;
+      line-height: 50px;
       margin: 0 0 40px 0;
+   }
+   .page2 .page2_content_text {
+      padding: 5px;
    }
    .img22 {
       width: 300px;
@@ -394,6 +504,9 @@
    }
    .page4 .page4_img img {
       width: 290px;
+   }
+   .page4 .page4_text {
+      padding: 5px;
    }
    .page5 .page5_content {
       display: grid;
@@ -421,8 +534,8 @@
 
 @media(max-width: 350px) {
    .head_link {
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 18px;
+      line-height: 23px;
    }
    .logo img {
       width: 40px;
@@ -433,8 +546,18 @@
    .page0 {
       padding: 50px 0 40px 0;
    }
+   .page1 {
+      padding: 110px 0 0 0;
+   }
    .page1 .page1_columns>*:not(:last-child) {
       margin: 0 0 60px 0;
+   }
+   .page2 .page2_content_text {
+      padding: 3px;
+   }
+   .page3 .page3_content .block1 .block1_text {
+      text-align: center;
+      padding: 37px 3px 10px 3px;
    }
    .text1 {
       font-size: 14px;
@@ -460,9 +583,12 @@
       font-size: 25px;
       line-height: 30px;
    }
+   .page4 .page4_text {
+      padding: 3px;
+   }
    .page2 .page2_content_text .page2_title {
       font-size: 35px;
-      line-height: 20px;
+      line-height: 40px;
       margin: 0 0 30px 0;
    }
    .img22 {
