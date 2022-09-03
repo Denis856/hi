@@ -13,34 +13,39 @@
    <div class="wrapper">
       <header id="header" class="header">
          <div class="container">
-            <div class="header_rows">
-               <div class="logo">
-                  <img src="img/logo.png" alt="some">
+            <div class="header_content">
+               <div class="header_rows">
+                  <div class="logo">
+                     <img src="img/logo.png" alt="some">
+                  </div>
+                  <div id="menu_burger" onclick="addlock()" class="menu_burger">
+                     <span></span>
+                  </div>
+                  <nav class="nav">
+                     <ul class="head_list">
+                        <li class="li">
+                           <a href="" class="head_link">
+                              Lorem
+                           </a>
+                        </li>
+                        <li class="li">
+                           <a href="" class="head_link">
+                              Lorem
+                           </a>
+                        </li>
+                        <li class="li">
+                           <a href="" class="head_link">
+                              Lorem
+                           </a>
+                        </li>
+                        <li class="li">
+                           <a href="" class="head_link">
+                              Lorem
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
                </div>
-               <nav class="nav">
-                  <ul class="head_list">
-                     <li class="li">
-                        <a href="" class="head_link">
-                           Lorem
-                        </a>
-                     </li>
-                     <li class="li">
-                        <a href="" class="head_link">
-                           Lorem
-                        </a>
-                     </li>
-                     <li class="li">
-                        <a href="" class="head_link">
-                           Lorem
-                        </a>
-                     </li>
-                     <li class="li">
-                        <a href="" class="head_link">
-                           Lorem
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
             </div>
          </div>
       </header>
@@ -210,7 +215,7 @@
                   <div class="block5">
                      <div class="block5_te">
                         <div class="block5_title">
-                           <div id="arrow3" class="block5_img" onclick="TurnArrow1()">
+                           <div id="arrow3" class="block5_img" onclick="TurnArrow3()">
                               <img src="img/arrow.png" alt="some" class="arrow">
                            </div>
                            <div class="title5 text2">
@@ -219,9 +224,9 @@
                         </div>
                      </div>
                      <div class="block5_text0">
-                        <div id="block5_text0" class="block5_text">
+                        <div id="block5_text01" class="block5_text">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           <div class="block5_img" onclick="TurnArrow2()">
+                           <div class="block5_img" onclick="TurnArrow4()">
                               <img id="arrow4" src="img/arrow.png" alt="some" class="arrow arrow2">
                            </div>
                         </div>
@@ -233,7 +238,7 @@
                   <div class="block5">
                      <div class="block5_te">
                         <div class="block5_title">
-                           <div id="arrow" class="block5_img" onclick="TurnArrow1()">
+                           <div id="arrow5" class="block5_img" onclick="TurnArrow5()">
                               <img src="img/arrow.png" alt="some" class="arrow">
                            </div>
                            <div class="title5 text2">
@@ -242,10 +247,10 @@
                         </div>
                      </div>
                      <div class="block5_text0">
-                        <div id="block5_text0" class="block5_text">
+                        <div id="block5_text02" class="block5_text">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           <div class="block5_img" onclick="TurnArrow2()">
-                              <img id="arrow2" src="img/arrow.png" alt="some" class="arrow arrow2">
+                           <div class="block5_img" onclick="TurnArrow6()">
+                              <img id="arrow6" src="img/arrow.png" alt="some" class="arrow arrow2">
                            </div>
                         </div>
                      </div>
@@ -256,7 +261,7 @@
                   <div class="block5">
                      <div class="block5_te">
                         <div class="block5_title">
-                           <div id="arrow" class="block5_img" onclick="TurnArrow1()">
+                           <div id="arrow7" class="block5_img" onclick="TurnArrow7()">
                               <img src="img/arrow.png" alt="some" class="arrow">
                            </div>
                            <div class="title5 text2">
@@ -265,10 +270,10 @@
                         </div>
                      </div>
                      <div class="block5_text0">
-                        <div id="block5_text0" class="block5_text">
+                        <div id="block5_text03" class="block5_text">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           <div class="block5_img" onclick="TurnArrow2()">
-                              <img id="arrow2" src="img/arrow.png" alt="some" class="arrow arrow2">
+                           <div class="block5_img" onclick="TurnArrow8()">
+                              <img id="arrow8" src="img/arrow.png" alt="some" class="arrow arrow2">
                            </div>
                         </div>
                      </div>
@@ -350,10 +355,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/jquery-1.9.1.min.js"></script>
    <script src="js/style.js"></script>
-   <script src="js/swiper-bundle.min.js"></script>
-   <script>
-      var swiper = new Swiper(".mySwiper", {});
-   </script>
 </body>
 </html>
