@@ -298,11 +298,6 @@ body {
     padding: 100px 0 0 20px;
   }
 }
-@media (max-width: 400px) {
-  .header2__list {
-    padding: 100px 0 0 10px;
-  }
-}
 @media (max-width: 350px) {
   .header2__list {
     width: 55%;

@@ -49,6 +49,7 @@ for (let anchor of anchors) {
 var burger = document.querySelector('.header__burger');
 var list01 = document.querySelector('.header2__list');
 var main = document.querySelector('.page');
+var footer = document.querySelector('.footer');
 var body = document.querySelector('body');
 
 burger.onclick = () => {
@@ -63,7 +64,10 @@ burger.onclick = () => {
    });
 };
 main.onclick = () => {
+   list01.classList.remove('active');
    body.classList.remove('active');
+};
+footer.onclick = () => {
    list01.classList.remove('active');
    body.classList.remove('active');
 };
